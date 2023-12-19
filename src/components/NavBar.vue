@@ -22,16 +22,19 @@ const mobileMenuOpen = ref(false);
           <img class="h-[70px] w-auto" src="../assets/image/logo.png" alt="" />
         </a>
       </div>
-      <div class="flex lg:hidden">
-        <button
-          type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          @click="mobileMenuOpen = true"
-        >
-          <span class="sr-only">Open main menu</span>
-          <Bars3Icon class="h-10 w-10 text-black" aria-hidden="true" />
-        </button>
-      </div>
+
+        <div class="flex lg:hidden">
+      <button
+        v-if="!mobileMenuOpen"
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        @click="mobileMenuOpen = true"
+      >
+        <span class="sr-only">Open main menu</span>
+        <Bars3Icon class="h-10 w-10 text-black" aria-hidden="true" />
+      </button>
+    
+    </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <a href="#" class="text-[12px] leading-6">SIGNATURE CAKES</a>
         <a href="#" class="text-[12px] leading-6">BESPOKE CAKES</a>
