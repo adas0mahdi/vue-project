@@ -4,9 +4,9 @@ import { ChevronDownIcon } from "@heroicons/vue/24/outline";
 <!-- Hero.vue -->
 <template>
   <!-- Background Image Section -->
-  <div class="absolute top-0 left-0 z-10 overflow-hidden">
+  <div class="relative top-0 left-0 z-10 overflow-hidden">
     <img
-      class="scale-125 translate-x-11 w-full h-full object-cover min-h-screen"
+      class="scale-125 translate-x-10 sm:translate-x-16 lg: w-full h-full object-cover min-h-screen"
       src="../assets/image/hero.jpg"
       alt="Passion Craft Background Image"
     />
@@ -35,10 +35,5 @@ import { ChevronDownIcon } from "@heroicons/vue/24/outline";
     </div>
   </div>
 
-  <!-- Empty Section -->
-  <div
-    class="-z-40 pointer-events-none w-full h-[577px] md:h-[580px] lg:h-[750px] xl:h-[890px]"
-  >
-    <!-- Your content for the empty section goes here -->
-  </div>
+
 </template>
